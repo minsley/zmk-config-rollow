@@ -10,6 +10,18 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -21,7 +33,7 @@
 //                        |     | LWR | SPC | RSE  |     |
                         bindings = <
    &kp TAB &kp Q      &kp W      &kp F      &kp P      &kp B     &kp J &kp L      &kp U      &kp Y      &kp SEMI      &kp BSPC
-   &kp ESC &mt LCTL A &mt LALT R &mt LGUI S &mt LSFT T &kp G     &kp M &mt RSFT N &mt RGUI E &mt RALT I &mt RCTL O &kp SQT
+   &kp ESC &hm LCTL A &hm LALT R &hm LGUI S &hm LSFT T &kp G     &kp M &hm RSFT N &hm RGUI E &hm RALT I &hm RCTL O &kp SQT
    &none   &kp Z      &kp X      &kp C      &kp D      &kp V     &kp K &kp H      &kp COMMA  &kp DOT    &kp FSLH   &none
                                            &none  &mo 1 &kp SPACE &mo 2  &none
                         >;
