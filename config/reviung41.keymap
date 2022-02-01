@@ -30,12 +30,12 @@
 // | TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  |  BKSP  |
 // | ESC |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |   '    |
 // |     |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  |        |
-//                        |     | LWR | SPC | RSE  |     |
+//                        | ESC | LWR | SPC | RSE  | BKSP |
                         bindings = <
    &kp TAB &kp Q      &kp W      &kp F      &kp P      &kp B     &kp J &kp L      &kp U      &kp Y      &kp SEMI      &kp BSPC
    &kp ESC &hm LCTL A &hm LALT R &hm LGUI S &hm LSFT T &kp G     &kp M &hm RSFT N &hm RGUI E &hm RALT I &hm RCTL O &kp SQT
    &none   &kp Z      &kp X      &kp C      &kp D      &kp V     &kp K &kp H      &kp COMMA  &kp DOT    &kp FSLH   &none
-                                           &none  &mo 1 &kp SPACE &mo 2  &none
+                                         &kp ESC &mo 1 &kp SPACE &mo 2 &kp BSPC
                         >;
                 };
 
