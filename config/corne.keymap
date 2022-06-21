@@ -35,7 +35,7 @@
    &none &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &kp SEMI &none
    &none &kp A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E     &kp I   &kp O    &none
    &none &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &kp FSLH &none
-         &hm LSHFT ESC &mo 1 &kp SPACE   &kp RET &mo 2 &kp BSPC
+              &kp ESC &mo 1 &hm LSFT SPACE   &kp RET &mo 2 &kp BSPC
                         >;
                 };
                 lower_layer {
