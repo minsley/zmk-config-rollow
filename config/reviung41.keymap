@@ -31,7 +31,7 @@
            = <&macro_press &kp LCTL>
            , <&macro_press &kp LSFT>
            , <&macro_tap &kp TAB>
-           , <&macro_releas &kp LSFT>
+           , <&macro_release &kp LSFT>
            , <&macro_release &kp LCTL>
            ;
       };
