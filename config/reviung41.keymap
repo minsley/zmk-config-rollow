@@ -19,10 +19,23 @@
         #binding-cells = <0>;
         bindings
            = <&macro_press &kp LCTL>
+           , <&macro_press &kp LSFT>
+           , <&macro_tap &kp TAB>
+           , <&macro_releas &kp LSFT>
+           , <&macro_release &kp LCTL>
+           ;
+      };
+      tab_right: tab_right {
+        label = "ZM_tab_right";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+           = <&macro_press &kp LCTL>
            , <&macro_tap &kp TAB>
            , <&macro_release &kp LCTL>
            ;
       };
+ 
     };
 
         keymap {
