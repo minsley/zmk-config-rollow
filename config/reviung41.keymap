@@ -41,13 +41,13 @@
                 lower_layer {
 // -------------------------------------------------------------------------------------
 // |    |  tab | swin | tabl | tabr | vlup |   | rset | home | cpsl |  end |  del |    |
-// |    | ctrl |  alt |  cmd | shft | vldn |   |   up | left | down | rght | bspc |    |
+// |    | ctrl |  alt |  cmd | shft | vldn |   | left | down |   up | rght | bspc |    |
 // |    | spcl | spcr | back |  fwd | play |   |      | pdwn | pgup | swpl | entr |    |
 //                           |      |      |   | ADJ  |      |
                         bindings = <
-   &none &kp TAB  &none    &none &none &kp C_VOL_UP   &reset   &kp HOME  &none     &kp END   &kp DEL &none
-   &none &sk LCTL &sk LALT &LGUI &LSFT &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none   &none
-   &none &none    &none    &none &none &kp C_PP       &none    &kp PG_UP &kp PG_DN &none     &kp RET &none
+   &none &kp TAB  &none    &none    &none    &kp C_VOL_UP   &reset   &kp HOME  &none     &kp END   &kp DEL  &none
+   &none &sk LCTL &sk LALT &sk LGUI &sk LSFT &kp C_VOL_DN   &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp BSPC &none
+   &none &none    &none    &none    &none    &kp C_PP       &none    &kp PG_UP &kp PG_DN &none     &kp RET  &none
                          &trans      &trans       &none        &mo 3       &trans
                         >;
                 };
