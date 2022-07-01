@@ -5,9 +5,9 @@ manifest:
     - name: rollow
       url-base: https://github.com/barbellboards
   projects:
-    - name: Rollow-ZMK
-      remote: rollow
-      revision: barbellboards/rollow
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
